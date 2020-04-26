@@ -3,6 +3,8 @@ package com.service.impl;
 import org.springframework.stereotype.Service;
 
 import com.service.SendEmailService;
+import org.springframework.transaction.annotation.Transactional;
+
 @Service
 public class SendEmailServiceImpl implements SendEmailService{
 

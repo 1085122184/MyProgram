@@ -32,4 +32,14 @@ public class RedisUtils {
         String result = jedis.set(key,goods.toString());
         return result;
     }
+
+    public String All(Goods goods){
+        Jedis jedis = jedisPool.getResource();
+        String key = "GOODS"+goods.getGoodsId();
+
+        String result = jedis.set(key,goods.toString());
+        return result;
+    }
+
+
 }

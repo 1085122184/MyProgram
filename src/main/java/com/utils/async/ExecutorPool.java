@@ -6,6 +6,10 @@ import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
+/**
+ * 线程池
+ * @author cuijixu
+ */
 @Component
 public class ExecutorPool {
 

@@ -1,6 +1,5 @@
-package com.utils.redis;
+package com.test.transactional;
 
-import com.entity.Goods;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,18 +10,12 @@ import static org.junit.Assert.*;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class RedisUtilsTest {
-
+public class TransactionalTestTest {
     @Autowired
-    RedisUtils redisUtils;
+    TransactionalTest transactionalTest;
+
     @Test
-    public void setGoods() {
-        Goods goods = new Goods();
-        for (int i=0;i<100;i++){
-            goods.setGoodsId(i);
-
-            redisUtils.setGoods(goods);
-        }
+    public void test(){
+        transactionalTest.test();
     }
-
 }
